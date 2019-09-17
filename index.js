@@ -5,6 +5,6 @@ class Driver {
   }
 
   startDate() {
-    console.log(`Hello, my name is ${this.name}`);
+    return Date.now();
   }
 }
