@@ -9,3 +9,15 @@ class Driver {
       return endDate - date;
   }
 }
+
+class Route {
+  constructor(beginningLocation , endingLocation) {
+    this.beginningLocation  = beginningLocation ;
+    this.endingLocation = endingLocation;
+  }
+
+  yearsExperienceFromBeginningOf(endDate) {
+      let date = this.startDate.getFullYear();
+      return endDate - date;
+  }
+}
