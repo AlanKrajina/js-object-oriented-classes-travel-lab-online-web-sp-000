@@ -16,7 +16,7 @@ class Route {
     this.endingLocation = endingLocation;
   }
 
-  yearsExperienceFromBeginningOf(endDate) {
+  blocksTravelled (endDate) {
       let date = this.startDate.getFullYear();
       return endDate - date;
   }
