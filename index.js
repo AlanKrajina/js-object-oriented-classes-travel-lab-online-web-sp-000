@@ -4,6 +4,7 @@ class Driver {
     this.day = day;
   }
 
-  startDate())
+  startDate() {
+    return let date = new Date(this.day)
   }
 }
