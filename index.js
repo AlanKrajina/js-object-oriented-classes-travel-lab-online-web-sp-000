@@ -5,6 +5,6 @@ class Driver {
   }
 
   startDate() {
-    return Date.now();
+    return Date.now().toString();
   }
 }
