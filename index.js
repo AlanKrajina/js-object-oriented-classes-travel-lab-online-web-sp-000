@@ -26,8 +26,7 @@ class Route {
     this.endingLocation = endingLocation;
   }
 
-  blocksTravelled (endDate) {
-      let date = this.startDate.getFullYear();
-      return endDate - date;
+  blocksTravelled () {
+      return this.endingLocation.vertical - this.beginningLocation.vertical;
   }
 }
