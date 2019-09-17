@@ -20,6 +20,7 @@ class Driver {
   }
 }
 
+
 class Route {
   constructor(beginningLocation, endingLocation) {
     this.beginningLocation = beginningLocation;
@@ -47,3 +48,4 @@ class Route {
       return this.blocksTravelled() / 3;
     }
   };
+}
