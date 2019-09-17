@@ -3,7 +3,7 @@ class Driver {
     this.name = name;
     this.day = day;
   }
- 
+
   sayHello() {
     console.log(`Hello, my name is ${this.name}`);
   }
