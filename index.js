@@ -4,7 +4,7 @@ class Driver {
     this.day = day;
   }
 
-  sayHello() {
+  startDate() {
     console.log(`Hello, my name is ${this.name}`);
   }
 }
