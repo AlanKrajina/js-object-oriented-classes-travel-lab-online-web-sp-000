@@ -4,7 +4,6 @@ class Driver {
     this.day = day;
   }
 
-  startDate() {
-    new Date(this.day)
+  startDate())
   }
 }
