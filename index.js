@@ -21,12 +21,29 @@ class Driver {
 }
 
 class Route {
-  constructor(beginningLocation , endingLocation) {
-    this.beginningLocation  = beginningLocation ;
+  constructor(beginningLocation, endingLocation) {
+    this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
 
-  blocksTravelled () {
-      return this.endingLocation.vertical - this.beginningLocation.vertical;
+  avenueToInteger(avenue) {
+    return eastWest.indexOf(avenue);
   }
-}
+
+  blocksTravelled() {
+    let horizontalDistance =
+      this.avenueToInteger( this.endingLocation.horizontal ) -
+      this.avenueToInteger( this.beginningLocation.horizontal );
+    let verticalDistance =
+      this.endingLocation.vertical - this.beginningLocation.vertical;
+    return Math.abs( horizontalDistance ) + Math.abs( verticalDistance);
+
+  };
+
+  estimatedTime(peak) {
+    if ( peak ) {
+      return this.blocksTravelled() / 2;
+    } else {
+      return this.blocksTravelled() / 3;
+    }
+  };
